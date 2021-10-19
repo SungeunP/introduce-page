@@ -1,9 +1,27 @@
+/*
+* All default styles setted here
+*/
+
+@font-face {
+  font-family: "Didot";
+  src: url("/fonts/Didot/Didot.woff");
+}
+/* @font-face {
+  font-family: "DidotBold";
+  src: url("/fonts/DidotBold/DidotLTStd-Bold.woff");
+} */
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Didot', Arial, sans-serif;
+  overflow: hidden;
+}
+body {
+  background-color: #DFCEB9;
 }
 
 a {
@@ -13,4 +31,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+/* Initialize highlighted text */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
 }

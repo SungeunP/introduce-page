@@ -37,17 +37,20 @@
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-props-no-spreading": 0,
-    "no-use-before-define": 0, // For error message `'React' was used before it was defined` in tsx
+    // "no-use-before-define": 0, // For error message `'React' was used before it was defined` in tsx
     "@typescript-eslint/explicit-module-boundary-types": 0, // For block ts component return type error
     "import/extensions": [ // For simple import code writes (like import text from "component/text")
       "error",
       "ignorePackages",
       {
-        "js": "never",
+        "js'React' was used before it was defined": "never",
         "jsx": "never",
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "no-shadow": 0,
+    "@typescript-eslint/no-shadow": "error",
+    "react/require-default-props": 0 // `defaultProps` not allowed, use default parameter syntax to components
   }
 }
