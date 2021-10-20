@@ -1,5 +1,6 @@
 import React from "react";
 
+import classnames from "classnames";
 import styles from "./Typography.module.scss";
 
 export enum TypographyTypes {
@@ -34,11 +35,20 @@ interface ITypography {
   type?: TypographyTypes;
   value: string;
   bold?: boolean;
-  style?;
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  style?: {};
+  className?: string;
 }
-const Typography = ({ type, value, bold = false, style }: ITypography) => {
+const Typography = ({
+  type,
+  value,
+  bold = false,
+  style,
+  className,
+}: ITypography) => {
+  const classNames = classnames(styles.typography, className || "");
   let inheritanceProperties = {
-    className: `${styles.typography}`,
+    className: classNames,
     style,
   };
 

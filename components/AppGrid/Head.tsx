@@ -1,4 +1,5 @@
 import Icon from "components/Contents/Icon";
+import Time from "components/Contents/Time";
 import Title from "components/Contents/Title";
 import React from "react";
 import styles from "styles/Head.module.scss";
@@ -12,7 +13,9 @@ const Head = () => {
       <div>
         <Title />
       </div>
-      <div>Cell 3</div>
+      <div>
+        <Time />
+      </div>
     </div>
   );
 };

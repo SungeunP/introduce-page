@@ -1,0 +1,10 @@
+.tech_stack {
+  display: flex-wrap;
+
+  .stack {
+    display: inline-block;
+    width: 25%;
+    min-height: 240px;
+    padding: 18px;
+  }
+}

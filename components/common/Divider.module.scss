@@ -1,0 +1,16 @@
+@use "styles/variables";
+
+.divider {
+  background-color: variables.$border-color;
+  box-sizing: border-box;
+  &.ver {
+    width: 100%;
+    height: 4px;
+    margin: variables.$section-padding 0;
+  }
+  &.hor {
+    width: 4px;
+    height: 100%;
+    margin: 0 variables.$section-padding;
+  }
+}

@@ -1,0 +1,15 @@
+@use "styles/variables";
+
+.greetings {
+  padding: 16px;
+  border: 4px solid variables.$border-color;
+
+  .image {
+    height: 360px;
+    background-color: #C4C4C4;
+  }
+  
+  .title {
+    margin-bottom: 12px;
+  }
+}
