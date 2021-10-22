@@ -5,7 +5,7 @@ import Typography, {
   TypographyTypes,
 } from "components/StyledComponents/Typography/Typography";
 
-import styles from "components/Contents/Title.module.scss";
+import styles from "components/Contents/Title/Title.module.scss";
 
 const Title = () => (
   <>

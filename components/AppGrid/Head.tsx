@@ -1,6 +1,6 @@
 import Icon from "components/Contents/Icon";
 import Time from "components/Contents/Time";
-import Title from "components/Contents/Title";
+import Title from "components/Contents/Title/Title";
 import React from "react";
 import styles from "styles/Head.module.scss";
 

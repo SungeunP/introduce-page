@@ -1,6 +1,7 @@
 import Divider, { axisTypes } from "components/common/Divider";
-import Greetings from "components/Contents/Greetings";
-import TechStack from "components/Contents/TechStack";
+import Greetings from "components/Contents/Greetings/Greetings";
+import Projects from "components/Contents/Projects/Projects";
+import TechStack from "components/Contents/TechStack/TechStack";
 import React from "react";
 
 import styles from "styles/Body.module.scss";
@@ -15,6 +16,7 @@ const Body = () => {
         <div>
           <TechStack />
           <Divider axis={axisTypes.vertical} />
+          <Projects />
         </div>
       </section>
     </div>

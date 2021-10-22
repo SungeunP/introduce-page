@@ -1,0 +1,8 @@
+.project {
+
+  .content {
+    display: grid;
+    grid-template-columns: calc(100% - 216px) 200px;
+    gap: 16px;
+  }
+}

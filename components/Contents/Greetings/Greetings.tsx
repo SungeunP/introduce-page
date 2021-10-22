@@ -3,7 +3,7 @@ import Typography, {
   TypographyTypes,
 } from "components/StyledComponents/Typography/Typography";
 
-import styles from "components/Contents/Greetings.module.scss";
+import styles from "components/Contents/Greetings/Greetings.module.scss";
 
 const Greetings = () => {
   return (
