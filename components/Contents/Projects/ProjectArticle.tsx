@@ -10,9 +10,10 @@ import UsedTechs from "./UsedTechs";
 interface IProject {
   title: string;
   techs: Array<Tech>;
+  link: string;
   children: any;
 }
-const ProjectArticle = ({ title, techs, children }: IProject) => {
+const ProjectArticle = ({ title, techs, link, children }: IProject) => {
   return (
     <section className={styles.project}>
       <Typography value={title} type={TypographyTypes.h4} />

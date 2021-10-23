@@ -1,0 +1,5 @@
+@use "styles/variables";
+
+.regular_padding {
+  padding-top: variables.$section-padding;
+}

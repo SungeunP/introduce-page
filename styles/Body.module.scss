@@ -5,9 +5,16 @@
   height: calc(100% - (100px + variables.$section-padding));
   padding-top: variables.$section-padding;
 
-  .top_section {
+  > section {
     display: grid;
+  }
+  .top_section {
     grid-template-columns: 300px calc(calc(100% - 300px) - variables.$section-padding);
     gap: variables.$section-padding;
+  }
+
+  .middle_section {
+    grid-template-columns: calc(calc(100% - 300px) - variables.$section-padding) 52px 248px;
+    // gap: variables.$section-padding;
   }
 }

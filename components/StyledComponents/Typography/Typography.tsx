@@ -33,7 +33,8 @@ const getClassnameByType = (type: TypographyTypes) => {
 
 interface ITypography {
   type?: TypographyTypes;
-  value: string;
+  value?: string;
+  children?: unknown;
   bold?: boolean;
   // eslint-disable-next-line @typescript-eslint/ban-types
   style?: {};
@@ -42,6 +43,7 @@ interface ITypography {
 const Typography = ({
   type,
   value,
+  children,
   bold = false,
   style,
   className,
@@ -60,6 +62,7 @@ const Typography = ({
     };
   }
 
+  const targetValue = value || children;
   if (type) {
     inheritanceProperties = {
       ...inheritanceProperties,
@@ -69,22 +72,22 @@ const Typography = ({
     };
     switch (type) {
       case TypographyTypes.h1:
-        return <h1 {...inheritanceProperties}>{value}</h1>;
+        return <h1 {...inheritanceProperties}>{targetValue}</h1>;
       case TypographyTypes.h2:
-        return <h2 {...inheritanceProperties}> {value} </h2>;
+        return <h2 {...inheritanceProperties}> {targetValue} </h2>;
       case TypographyTypes.h3:
-        return <h3 {...inheritanceProperties}> {value} </h3>;
+        return <h3 {...inheritanceProperties}> {targetValue} </h3>;
       case TypographyTypes.h4:
-        return <h4 {...inheritanceProperties}> {value} </h4>;
+        return <h4 {...inheritanceProperties}> {targetValue} </h4>;
       case TypographyTypes.h5:
-        return <h5 {...inheritanceProperties}> {value} </h5>;
+        return <h5 {...inheritanceProperties}> {targetValue} </h5>;
       case TypographyTypes.h6:
-        return <h6 {...inheritanceProperties}> {value} </h6>;
+        return <h6 {...inheritanceProperties}> {targetValue} </h6>;
       default:
     }
   }
 
-  return <p> {value} </p>;
+  return <p {...inheritanceProperties}> {targetValue} </p>;
 };
 
 export default Typography;

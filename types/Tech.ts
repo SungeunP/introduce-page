@@ -91,6 +91,18 @@ export const techRedux = new Tech(
   Ratings.expert,
   "현업 적용경험 다수",
 );
+export const techMui = new Tech(
+  "Mui",
+  "/images/Mui.png",
+  Ratings.sideProject,
+  "사이드 프로젝트 적용 경험",
+);
+export const techWPF = new Tech(
+  "WPF",
+  "/images/Window.png",
+  Ratings.exportToService,
+  "간단한 툴 B2B 배포 경험",
+);
 
 export const allTechStack: Array<Tech> = [
   techES6,
