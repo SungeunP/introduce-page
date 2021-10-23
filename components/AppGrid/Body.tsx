@@ -1,6 +1,7 @@
 import Divider, { axisTypes } from "components/common/Divider";
 import ReadMore from "components/common/ReadMore";
 import VerticalPadding from "components/common/VerticalPadding";
+import Careers from "components/Contents/Careers/Careers";
 import ExternalLinks from "components/Contents/ExternalLinks/ExternalLinks";
 import Greetings from "components/Contents/Greetings/Greetings";
 import ProjectArticle from "components/Contents/Projects/ProjectArticle";
@@ -25,7 +26,7 @@ import {
 const Body = () => {
   return (
     <div className={styles.body}>
-      <section className={styles.top_section}>
+      <section className={styles.section_1}>
         <div>
           <Greetings />
         </div>
@@ -35,8 +36,10 @@ const Body = () => {
           <Projects />
         </div>
       </section>
+
       <VerticalPadding />
-      <section className={styles.middle_section}>
+
+      <section className={styles.section_2}>
         <div>
           <ProjectAtricles />
         </div>
@@ -44,6 +47,16 @@ const Body = () => {
         <div>
           <ExternalLinks />
         </div>
+      </section>
+
+      <Divider axis={axisTypes.vertical} />
+
+      <section className={styles.section_3}>
+        <div>
+          <Careers />
+        </div>
+        <Divider axis={axisTypes.horizontal} />
+        <div />
       </section>
     </div>
   );

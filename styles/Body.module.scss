@@ -8,13 +8,17 @@
   > section {
     display: grid;
   }
-  .top_section {
+  .section_1 {
     grid-template-columns: 300px calc(calc(100% - 300px) - variables.$section-padding);
     gap: variables.$section-padding;
   }
 
-  .middle_section {
+  .section_2 {
     grid-template-columns: calc(calc(100% - 300px) - variables.$section-padding) 52px 248px;
     // gap: variables.$section-padding;
+  }
+
+  .section_3 {
+    grid-template-columns: calc(50% - (variables.$section-padding + 26px)) 52px calc(50% - (variables.$section-padding + 26px));
   }
 }

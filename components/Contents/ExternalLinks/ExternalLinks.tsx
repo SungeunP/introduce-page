@@ -52,6 +52,7 @@ const ExternalLink = ({ name, link, description }: ClassExternalLink) => (
     <Typography type={TypographyTypes.h4}>
       <StyledA href={link}>{name}</StyledA>
     </Typography>
+    <Typography style={{ marginTop: 4 }}>{description}</Typography>
   </li>
 );
 
