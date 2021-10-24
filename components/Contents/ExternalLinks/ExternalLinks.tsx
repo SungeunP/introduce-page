@@ -7,7 +7,7 @@ import styles from "components/Contents/ExternalLinks/ExternalLinks.module.scss"
 import { ClassExternalLink } from "types/ExternalLink";
 import StyledA from "components/StyledComponents/StyledA/StyledA";
 
-const ExternalLinkDatas: Array<ClassExternalLink> = [
+const ExternalLinksData: Array<ClassExternalLink> = [
   new ClassExternalLink(
     "Dev blog",
     "https://dev-son.tistory.com",
@@ -39,7 +39,7 @@ const ExternalLinks = () => {
         style={titleStyle}
       />
       <ul className={styles.content}>
-        {ExternalLinkDatas.map((ExternalLinkData) => (
+        {ExternalLinksData.map((ExternalLinkData) => (
           <ExternalLink key={ExternalLinkData.id} {...ExternalLinkData} />
         ))}
       </ul>

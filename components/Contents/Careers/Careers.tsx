@@ -5,8 +5,9 @@ import React, { useState } from "react";
 import { ClassCareer } from "types/Career";
 
 import styles from "components/Contents/Careers/Careers.module.scss";
+import Infomation from "components/common/Infomation";
 
-const CareerDatas: Array<ClassCareer> = [
+const CareersData: Array<ClassCareer> = [
   new ClassCareer(
     "Forcewin",
     () => (
@@ -39,7 +40,7 @@ const Careers = () => {
       </Typography>
       <ul className={styles.career_list}>
         <ListItem>
-          <CareerArticle {...CareerDatas[0]} />
+          <Infomation {...CareersData[0]} />
         </ListItem>
         {nowJobHunting && (
           <ListItem>

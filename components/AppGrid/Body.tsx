@@ -2,6 +2,7 @@ import Divider, { axisTypes } from "components/common/Divider";
 import ReadMore from "components/common/ReadMore";
 import VerticalPadding from "components/common/VerticalPadding";
 import Careers from "components/Contents/Careers/Careers";
+import EducationCertificate from "components/Contents/EducationCertificate/EducationCertificate";
 import ExternalLinks from "components/Contents/ExternalLinks/ExternalLinks";
 import Greetings from "components/Contents/Greetings/Greetings";
 import ProjectArticle from "components/Contents/Projects/ProjectArticle";
@@ -56,13 +57,15 @@ const Body = () => {
           <Careers />
         </div>
         <Divider axis={axisTypes.horizontal} />
-        <div />
+        <div>
+          <EducationCertificate />
+        </div>
       </section>
     </div>
   );
 };
 
-const ProjectArticleDatas: Array<Project> = [
+const ProjectArticlesData: Array<Project> = [
   new Project(
     "Todo app",
     [techReact, techTS, techSass, techMui],
@@ -133,7 +136,7 @@ const ProjectArticleDatas: Array<Project> = [
  */
 const ProjectAtricles = () => (
   <>
-    {ProjectArticleDatas.map(
+    {ProjectArticlesData.map(
       ({ id, name, usedTechs, externalLink, description }) => (
         <ProjectArticle
           key={id}

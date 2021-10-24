@@ -19,6 +19,6 @@
   }
 
   .section_3 {
-    grid-template-columns: calc(50% - (variables.$section-padding + 26px)) 52px calc(50% - (variables.$section-padding + 26px));
+    grid-template-columns: calc(50% - (variables.$section-padding + 2px)) 52px calc(50% - (variables.$section-padding + 2px));
   }
 }
