@@ -31,7 +31,7 @@ const CareersData: Array<ClassCareer> = [
 ];
 
 const Careers = () => {
-  const [nowJobHunting, setJobHunting] = useState(true);
+  const [nowJobHunting, setJobHunting] = useState(false);
 
   return (
     <>

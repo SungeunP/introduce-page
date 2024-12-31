@@ -20,6 +20,12 @@ const educationsData: Array<ClassInfomation> = [
     "Korea cyber univ",
     "Department of software engineering",
     new Date("2018-03-04"),
+    new Date("2024-02-03"),
+  ),
+  new ClassInfomation(
+    "Hongik univ",
+    "Department of engineering",
+    new Date("2024-03-04"),
     "current",
   ),
 ];

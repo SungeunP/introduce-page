@@ -3,8 +3,12 @@
 }
 
 ul.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 128px);
   padding: 36px 0px;
   > li {
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
 }

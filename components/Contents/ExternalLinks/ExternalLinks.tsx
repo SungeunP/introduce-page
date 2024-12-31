@@ -11,17 +11,17 @@ const ExternalLinksData: Array<ClassExternalLink> = [
   new ClassExternalLink(
     "Dev blog",
     "https://dev-son.tistory.com",
-    "주로 프론트엔드에 대한 글을 업로드합니다.",
+    "프론트엔드에 대한 글을 작성, 기록",
   ),
   new ClassExternalLink(
     "GitHub",
     "https://github.com/SungeunP",
-    "사이드 프로젝트등의 활동이 업로드 되어있습니다.",
+    "모든 프로젝트 활동.",
   ),
   new ClassExternalLink(
     "Notion resume",
     "https://www.notion.so/Seongeun-Park-2726443951614161a35954e98fb31fbb",
-    "Notion에서 작성된 이력서입니다.",
+    "Notion에서 작성된 이력서.",
   ),
 ];
 

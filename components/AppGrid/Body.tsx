@@ -8,9 +8,7 @@ import Greetings from "components/Contents/Greetings/Greetings";
 import ProjectArticle from "components/Contents/Projects/ProjectArticle";
 import Projects from "components/Contents/Projects/Projects";
 import TechStack from "components/Contents/TechStack/TechStack";
-import Typography, {
-  TypographyTypes,
-} from "components/StyledComponents/Typography/Typography";
+import Typography from "components/StyledComponents/Typography/Typography";
 import React from "react";
 
 import styles from "styles/Body.module.scss";
