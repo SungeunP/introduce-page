@@ -1,6 +1,6 @@
 module.exports = {
   output: "export",
-  basePath: "introduce-page",
+  basePath: "/introduce-page",
   images: {
     unoptimized: true,
   },
