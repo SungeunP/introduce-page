@@ -36,13 +36,17 @@ const Infomation = ({
 
   return (
     <>
-      <Typography type={TypographyTypes.h4}>
+      <Typography type={TypographyTypes.h4} style={{ display: "inline-block" }}>
         {name}
-        <Typography type={TypographyTypes.h5} className={styles.date_range}>
-          {startDateString}
-          {endDateString ? ` - ${endDateString}` : ""}
-        </Typography>
       </Typography>
+      <p className={styles.date_range}>
+        {startDateString}
+        {endDateString ? ` - ${endDateString}` : ""}
+      </p>
+      {/* <Typography type={TypographyTypes.h5} className={styles.date_range}>
+        {startDateString}
+        {endDateString ? ` - ${endDateString}` : ""}
+      </Typography> */}
       {typeof description === "string" ? description : description()}
     </>
   );

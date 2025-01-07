@@ -17,10 +17,10 @@ const TechStack = () => {
       {TechStackData.map((stack) => (
         <div key={stack.id} className={styles.stack}>
           <Image
-            src={stack.imgUrl}
+            src={`/introduce-page${stack.imgUrl}`}
             alt={stack.name}
-            width="100%"
-            height="100%"
+            width={100}
+            height={100}
             className={styles.image}
           />
           <div style={{ marginTop: 8 }} />

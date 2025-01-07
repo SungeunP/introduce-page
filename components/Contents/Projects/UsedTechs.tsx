@@ -20,8 +20,8 @@ const UsedTechs = ({ techs }: IUsedTechs) => {
         className={styles.title}
       />
       <ul className={styles.techs}>
-        {techs.map((usedTech) => (
-          <TechItem key={usedTech.id} tech={usedTech} />
+        {techs.map((tech) => (
+          <TechItem key={tech.id} tech={tech} />
         ))}
       </ul>
     </article>
@@ -37,11 +37,11 @@ interface IListTemplate {
 const TechItem = ({ tech }: IListTemplate) => (
   <li key={tech.id} className={styles.tech}>
     <Image
-      src={tech.imgUrl}
-      alt={tech.name}
+      src={`/introduce-page${tech.imgUrl}`} // ** should be global prefix variable ** [Later]
+      alt={`/introduce-page${tech.imgUrl}`}
       layout="responsive"
-      width="44px"
-      height="44px"
+      width="44"
+      height="44"
       quality="100"
     />
     <Typography type={TypographyTypes.h4} value={tech.name} />
